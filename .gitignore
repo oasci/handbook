@@ -1,0 +1,12 @@
+**/.DS_Store
+__pycache__
+.venv
+
+# Jupyter Notebook
+**/.ipynb_checkpoints
+
+# IDE settings
+.vscode/
+.idea/
+
+site/

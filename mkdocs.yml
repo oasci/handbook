@@ -1,0 +1,8 @@
+site_name: OASCI Handbook
+docs_dir: handbook
+
+# https://squidfunk.github.io/mkdocs-material/
+theme:
+  name: material
+  palette:
+    primary: indigo
