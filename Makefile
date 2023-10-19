@@ -44,3 +44,7 @@ serve:
 .PHONY: build
 build:
 	$(CONDA) mkdocs build
+
+.PHONY: deploy
+deploy:
+	$(CONDA) mkdocs gh-deploy --force
