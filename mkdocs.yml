@@ -5,6 +5,7 @@ copyright: Copyright &copy; 2023, OASCI
 site_author: OASCI
 
 # Github
+repo_name: oasci/handbook
 repo_url: https://github.com/oasci/handbook
 
 # https://squidfunk.github.io/mkdocs-material/
@@ -13,19 +14,28 @@ theme:
   language: en
   palette:
     primary: indigo
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
+    - content.code.annotate
+    - content.code.copy
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
     - navigation.tabs
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
     - toc.follow
-    - toc.integrate
     - navigation.top
     - search.suggest
     - navigation.footer
-    - content.action.view
 
 validation:
   omitted_files: warn
@@ -34,10 +44,13 @@ validation:
 
 # Options need to be indented twice for some reason?
 plugins:
-  - git-revision-date-localized:
-      enable_creation_date: true
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - git-committers:
+      repository: oasci/handbook
+      branch: main
+      docs_path: handbook
   - material-plausible
-  - git-authors
 
 extra:
   generator: false
