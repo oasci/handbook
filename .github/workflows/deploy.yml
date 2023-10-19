@@ -15,15 +15,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v4
+
+      - name: Install miniconda
+        uses: conda-incubator/setup-miniconda@v2
         with:
-          python-version: 3.x
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
+          miniconda-version: "latest"
+          auto-update-conda: true
+          python-version: "3.11"
+
+      - name: Initialize conda environment
+        run: make conda-setup
+
+      - name: Poetry install
+        run: make install
+
       - uses: actions/cache@v3
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material
+
       - run: mkdocs gh-deploy --force
