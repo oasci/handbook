@@ -10,7 +10,6 @@ CONDA := conda run -p $(CONDA_PATH)
 .PHONY: conda-setup
 conda-setup:
 	conda create -y -p $(CONDA_PATH) python=$(PYTHON_VERSION)
-	conda install -y conda-lock -p $(CONDA_PATH)
 	conda install -y -c conda-forge poetry pre-commit -p $(CONDA_PATH)
 
 # The find command is because of this:
@@ -24,16 +23,6 @@ conda-dependencies:
 pre-commit-install:
 	$(CONDA) pre-commit install
 
-.PHONY: from-conda-lock
-from-conda-lock:
-	$(CONDA) conda-lock install -p $(CONDA_PATH) $(REPO_PATH)/conda-lock.yml
-	find $(CONDA_PATH) -name direct_url.json -delete
-
-.PHONY: write-conda-lock
-write-conda-lock:
-	$(CONDA) conda env export --from-history | grep -v "^prefix" | grep -v "^name" > environment.yml
-	$(CONDA) conda-lock -f environment.yml -p linux-64 -p osx-64 -p win-64
-
 # Reads `pyproject.toml`, solves environment, then writes lock file.
 .PHONY: poetry-lock
 poetry-lock:
@@ -44,17 +33,14 @@ poetry-lock:
 install:
 	$(CONDA) poetry install --no-interaction
 
-.PHONY: setup
-setup: conda-setup pre-commit-install from-conda-lock install
-
 .PHONY: validate
 validate:
-	poetry run pre-commit run --all-files
+	$(CONDA) pre-commit run --all-files
 
 .PHONY: serve
 serve:
-	poetry run mkdocs serve
+	$(CONDA) mkdocs serve
 
 .PHONY: build
 build:
-	poetry run mkdocs build
+	$(CONDA) mkdocs build

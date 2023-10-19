@@ -1,8 +1,46 @@
-site_name: OASCI Handbook
 docs_dir: handbook
+
+site_name: OASCI Handbook
+copyright: Copyright &copy; 2023, OASCI
+site_author: OASCI
+
+# Github
+repo_url: https://github.com/oasci/handbook
 
 # https://squidfunk.github.io/mkdocs-material/
 theme:
   name: material
+  language: en
   palette:
     primary: indigo
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - navigation.footer
+    - content.action.view
+
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+
+# Options need to be indented twice for some reason?
+plugins:
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - material-plausible
+  - git-authors
+
+extra:
+  generator: false
+  analytics:
+    provider: plausible
+    domain: handbook.oasci.org
