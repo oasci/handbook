@@ -1,4 +1,4 @@
-# Handbook
+<h1 align="center">OASCI Handbook</h1>
 
 TODO:
 

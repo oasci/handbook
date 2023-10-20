@@ -19,6 +19,8 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  icon:
+    annotation: material/star-four-points-circle
   features:
     - content.code.annotate
     - content.code.copy

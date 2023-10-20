@@ -19,9 +19,10 @@ results = subprocess.run(
     ["conda", "run", "-p", CONDA_PATH, "pip", "list"],
     check=True,
     capture_output=True,
-    text=True
+    text=True,
 )
 conda_packages = results.stdout.split("\n")[3:]
+
 
 def check_if_include_package(conda_str):
     r"""Checks if we should include a package in pyproject.toml"""
@@ -30,6 +31,7 @@ def check_if_include_package(conda_str):
     if "_" == conda_str[0]:
         return False
     return True
+
 
 with open(PYPROJECT_TOML, mode="rb") as f:
     toml_file = tomli.load(f)

@@ -18,11 +18,16 @@ However, they are repeated below for completeness.
 ===+ "Linux"
 
     ```bash
-    mkdir -p ~/miniconda3 \
-    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh \
-    bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 \
-    rm -rf ~/miniconda3/miniconda.sh
+    mkdir -p ~/miniconda3 \ # (1)!
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh \ # (2)!
+    bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3 \ # (3)!
+    rm -rf ~/miniconda3/miniconda.sh # (4)!
     ```
+
+    1. Creates a `miniconda3` directory in the user's home directory.
+    2. Downloads the latest [miniconda installer](https://docs.conda.io/projects/miniconda/en/latest/index.html#latest-miniconda-installer-links) into the `miniconda3` directory.
+    3. Runs the `miniconda.sh` bash script for automated installation.
+    4. Cleans up all installation files.
 
 ### libmamba-solver
 
