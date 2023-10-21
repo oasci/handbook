@@ -14,12 +14,11 @@ theme:
   language: en
   palette:
     primary: indigo
-  icon:
-    repo: fontawesome/brands/github
   font:
     text: Roboto
     code: Roboto Mono
   icon:
+    epo: fontawesome/brands/github
     annotation: material/star-four-points-circle
   features:
     - content.code.annotate

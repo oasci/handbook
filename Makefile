@@ -24,7 +24,6 @@ write-conda-lock:
 .PHONY: from-conda-lock
 from-conda-lock:
 	$(CONDA) conda-lock install --prefix $(REPO_PATH)/.venv $(REPO_PATH)/conda-lock.yml
-	$(CODNA) $(REPO_PATH)/notify_poetry_of_conda.py
 	find $(CONDA_PATH) -name direct_url.json -delete
 
 # notify_poetry_of_conda.py
