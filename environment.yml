@@ -6,3 +6,5 @@ dependencies:
   - conda-lock
   - poetry
   - pre-commit
+  - tomli
+  - tomli-w
