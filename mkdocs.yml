@@ -8,12 +8,13 @@ site_author: OASCI
 repo_name: oasci/handbook
 repo_url: https://github.com/oasci/handbook
 
-# https://squidfunk.github.io/mkdocs-material/
+ https://squidfunk.github.io/mkdocs-material/
 theme:
   name: material
+  custom_dir: handbook/overrides
   language: en
   palette:
-    primary: indigo
+    primary: custom
   font:
     text: Roboto
     code: Roboto Mono
@@ -29,14 +30,13 @@ theme:
     - navigation.instant.progress
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.tracking
     - navigation.top
-    - navigation.footer
     - navigation.indexes
-    - navigation.sections
     - navigation.path
+    - navigation.prune
     - toc.follow
     - search.suggest
-    - navigation.footer
 
 validation:
   omitted_files: warn
@@ -46,6 +46,8 @@ validation:
 # Options need to be indented twice for some reason?
 plugins:
   - search
+  - material-plausible
+  - table-reader
   - git-committers:
       repository: oasci/handbook
       branch: main
@@ -58,6 +60,9 @@ extra:
     provider: plausible
     domain: handbook.oasci.org
 
+extra_css:
+  - stylesheets/extra.css
+
 extra_javascript:
   - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
@@ -65,6 +70,8 @@ extra_javascript:
 
 markdown_extensions:
   - abbr
+  - toc:
+      permalink: true
   - admonition
   - attr_list
   - def_list

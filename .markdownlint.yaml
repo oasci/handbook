@@ -1,8 +1,8 @@
 # https://github.com/DavidAnson/markdownlint/blob/main/schema/.markdownlint.yaml
-MD013:
-  line_length: 600
+MD013: false
 MD022: false
 MD024: false
+MD026: false
 MD028: false
 MD031: false
 MD032: false
