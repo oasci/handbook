@@ -1,3 +1,0 @@
-# Mentoring
-
-TODO:
