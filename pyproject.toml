@@ -21,7 +21,7 @@ bump-my-version = "^0.11.0"
 poetry-dynamic-versioning = "^1.1.0"
 
 [tool.bumpversion]
-current_version = "2023.10.15"
+current_version = "2023.11.5"
 tag = true
 commit = true
 
