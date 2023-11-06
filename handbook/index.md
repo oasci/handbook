@@ -1,10 +1,28 @@
-# Handbook
+<h1 align="center">OASCI Handbook</h1>
 
 TODO:
 
+## Deploying
+
+We use [bump-my-version](https://github.com/callowayproject/bump-my-version) to release a new version.
+This will create a git tag that is used by [poetry-dynamic-version](https://github.com/mtkennerly/poetry-dynamic-versioning) to generate version strings.
+
+However, we are using [Calendar Versioning](https://calver.org/) which means we need to manually specify new versions.
+For example, to bump the version to November 8, 2024, you would run the following command after activating the relevant conda environment.
+
+```bash
+bump-my-version bump --new-version 2024.11.8
+```
+
+After releasing a new version, you need to push and include all tags.
+
+```bash
+git push --follow-tags
+```
+
 ## Acknowledgements
 
-Much of this content is adapted with permission from the following sources:
+Some of this content is adapted with permission from the following sources:
 
 - [GitLab's Handbook](https://handbook.gitlab.com/).
 
