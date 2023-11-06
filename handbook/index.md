@@ -1,6 +1,14 @@
 <h1 align="center">OASCI Handbook</h1>
 
-TODO:
+<h3 align="center">The handbook guiding OASCI structure and pursuits</h3>
+
+## About
+
+**O**pen **a**cademic **sci**ence (OASCI) is a people-first embodiment of the traditional academic framework of research and education.
+Academic education and research are often driven by funding pursuits and a desire for recognition.
+OASCI uses a forward-thinking, inclusive, and progressive approach that welcomes all those passionate about exploring, learning, and sharing knowledge.
+Our non-profit's core mission is to provide cutting-edge, open, accessible educational and research resources and opportunities.
+
 
 ## Deploying
 
