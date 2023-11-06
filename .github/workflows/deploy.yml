@@ -35,4 +35,4 @@ jobs:
             mkdocs-material-
 
       - name: Deploy docs
-        run: make deploy-docs
+        run: make deploy
