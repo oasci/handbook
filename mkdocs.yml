@@ -8,7 +8,6 @@ site_author: OASCI
 repo_name: oasci/handbook
 repo_url: https://github.com/oasci/handbook
 
- https://squidfunk.github.io/mkdocs-material/
 theme:
   name: material
   custom_dir: handbook/overrides
