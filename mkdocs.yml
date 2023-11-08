@@ -59,7 +59,7 @@ extra:
     domain: handbook.oasci.org
 
 extra_css:
-  - stylesheets/extra.css
+  - css/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
