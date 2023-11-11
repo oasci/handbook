@@ -4,6 +4,11 @@ MD022: false
 MD024: false
 MD026: false
 MD028: false
+MD030:
+  ol_multi: 2
+  ol_single: 2
+  ul_multi: 2
+  ul_single: 2
 MD031: false
 MD032: false
 MD033: false
