@@ -59,6 +59,10 @@
     --md-accent-fg-color--transparent:   var(--md-primary-fg-color);
     --md-accent-bg-color:                #ffffff;
     --md-accent-bg-color--light:         #e5e5e5;
+
+    /* Admonition colors */
+    --md-admonition-fg-color:            #212529;
+    --md-admonition-bg-color:            #FAFAFA;
 }
 
 [data-md-color-scheme="dark"] {
@@ -122,4 +126,9 @@
     --md-accent-fg-color--transparent:   var(--md-primary-fg-color);
     --md-accent-bg-color:                #ffffff;
     --md-accent-bg-color--light:         #e5e5e5;
+
+    /* Admonition colors */
+    --md-admonition-fg-color:            #ffffff;
+    --md-admonition-bg-color:            #212529;
+
 }
