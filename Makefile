@@ -58,8 +58,8 @@ poetry-lock:
 install:
 	$(CONDA) poetry install --no-interaction --no-root
 
-.PHONY: refresh
-refresh: conda-create from-conda-lock pre-commit-install install
+.PHONY: environment
+environment: conda-create from-conda-lock pre-commit-install install
 
 .PHONY: refresh-locks
 refresh-locks: conda-create conda-setup conda-lock pre-commit-install poetry-lock install
@@ -75,14 +75,10 @@ serve:
 	echo "Served at http://127.0.0.1:8910/"
 	$(CONDA) mkdocs serve -a localhost:8910
 
-.PHONY: build
-build:
-	$(CONDA) mkdocs build
+.PHONY: docs
+docs:
+	$(CONDA) mkdocs build -d public/
 
-.PHONY: open
-open:
-	xdg-open ./site/index.html 2>/dev/null
-
-.PHONY: deploy
-deploy:
-	$(CONDA) mkdocs gh-deploy --force
+.PHONY: open-docs
+open-docs:
+	xdg-open public/index.html 2>/dev/null

@@ -1,12 +1,12 @@
 docs_dir: handbook
 
 site_name: OASCI Handbook
-copyright: CC BY-SA 4.0&nbsp;&nbsp;&nbsp;&nbsp; OASCI
+copyright: CC BY-SA 4.0 &mdash; OASCI
 site_author: OASCI
 
-# Github
+# Gitlab
 repo_name: oasci/handbook
-repo_url: https://github.com/oasci/handbook
+repo_url: https://gitlab.com/oasci/handbook
 
 theme:
   name: material
@@ -28,7 +28,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    epo: fontawesome/brands/github
+    repo: fontawesome/brands/gitlab
     annotation: material/star-four-points-circle
   features:
     - content.code.annotate

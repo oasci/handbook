@@ -51,8 +51,8 @@ These prerequisites relate to the company processes, digital infrastructure, and
     Every infrastructure is different, but at a minimum, all should include one tool from the following categories:
       - Group communication (eg: Slack)
       - File storage (eg: Google Drive)
-      - Knowledge management (eg: GitHub, Almanac)
-      - Project management (eg: GitHub, Asana)
+      - Knowledge management (eg: GitLab, Almanac)
+      - Project management (eg: GitLab, Asana)
       - HR management (eg: Workday)
       - Financial management (eg: Quickbooks)
       - Calendars and scheduling (eg: Google Calendar)
