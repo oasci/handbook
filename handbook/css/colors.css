@@ -7,9 +7,9 @@
     --md-primary-bg-color--light:        #DBDBDB; /* Secondary header text */
 
     /* Default color shades */
-    --md-default-fg-color:               #e2e4e9; /* ??? */
+    --md-default-fg-color:               #212529; /* Annotation text, ??? */
     --md-default-fg-color--light:        #7e7e7e; /* h1 */
-    --md-default-fg-color--lighter:      #e2e4e9; /* ??? */
+    --md-default-fg-color--lighter:      #e2e4e9; /* Annotation icons, ??? */
     --md-default-fg-color--lightest:     #e2e4e9; /* ??? */
 
     --md-default-bg-color:               #FAFAFA; /* Body background */
@@ -41,7 +41,7 @@
     --md-typeset-color:                  #212529; /* Main text color */
 
     /* Typeset `a` color shades */
-    --md-typeset-a-color:                #032779; /* Link color */
+    --md-typeset-a-color:                #025099; /* Link color */
 
     /* Typeset `table` color shades */
     --md-typeset-table-color:            #a5a5a5;  /* Outline color */
@@ -55,7 +55,7 @@
     --md-footer-bg-color--dark:          #212529; /* Footer background */
 
     /* Accent color shades */
-    --md-accent-fg-color:                var(--md-primary-fg-color); /* Hover over link */
+    --md-accent-fg-color:                #01a0d7; /* Hover over link */
     --md-accent-fg-color--transparent:   var(--md-primary-fg-color);
     --md-accent-bg-color:                #ffffff;
     --md-accent-bg-color--light:         #e5e5e5;
