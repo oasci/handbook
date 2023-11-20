@@ -30,4 +30,38 @@ It opens the door to innovation.
     They can be used together to gain a more holistic view of the product and its users.
     For example, you may want to consider the job statement and process while drafting the workflow of a new feature, but you may want to check specific content on a page suitable for a particular user persona.  
 
-## How do I structure a JTBD?
+## Terminology
+
+First, let's set the terminology we use for JTBD.
+
+-   **Job performer**: The person who does the job. Usually, we talk about these people in terms of personas. They are [buyers](/handbook/product/personas/#buyer-personas), [developers](/handbook/product/personas/#sasha-software-developer), [sysadmins](/handbook/product/personas/#sidney-systems-administrator), and so on.
+-   **Job**: Something a customer wants to accomplish. For example, the main job of a OASCI customer could be stated as, "build and deploy software." The job always follows the pattern (verb + object + clarifier) and is also refered to as the _job statement_.
+-   **Circumstance**: Describes the circumstances a person is in when they need a job done.
+-   **Need**: A job performer's desired outcome or end state. The need statement follows the pattern (direction + measure + object + clarifier), for example, _minimize the time it takes to review an MR_.
+-   **Job story**: A succinct statement that brings together the circumstance, goal, and outcome of a job.
+-   **Main job**: The primary job the preformer want to accomplish.
+-   **Small job**: A smaller, more practical job that corresponds roughly to steps or stages in a main job.
+-   **Micro-job**: A task related to a little job.
+
+## Examples and tips
+
+JTBDs are difficult to get right can take some time to refine.
+Below is an example of a job statement and its versions throughout the refinement process.
+The feedback provided for each version can offer some helpful tips to keep in mind when you're writing them.
+
+**Version 1:** When new features are added to a product, I want to know if and how those changes impact performance so that I can ensure my product works as expected for users.
+
+-   "When new features are added to a product" - Make sure to describe the circumstances the job performer is in when they need to get the job done. New features being added is not an isolated act.
+-   "I want to know if and how those changes impact performance" - This job can be a bit more specific (instead of using "if and how"). It will be easier to validate when you focus on one aspect of the need/outcome for the job performer.
+-   "so that I can ensure my product works as expected for users" -  How can you make the outcome for the job performer more specific? Why is it important that the product works as expected? What is the desired end state and/or feeling that a job performer has for doing this job? Make sure to describe the circumstances that the job performer is in when they need to get the job done.
+
+**Version 2:** When I or my teammate is making a code change to our product, I want to know if the change introduces a latency for my end users so that I can ensure users are satisfied with the performance of the product and continue to use it
+
+-   "When I or my teammate is making a code change to our product" - We don't need to specify the "who" this is for since it seems to apply to any code changes to the product.
+-   "so that I can ensure users are satisfied with the performance of the product and continue to use it" - Handling a latency doesn't measure satisfaction, but it deals directly with usability.
+
+**Final version:** When a code change is made, I want to know if the change introduces a latency for my end users so that I can meet the quality standards of performance response time to maintain usability for our end users.
+
+-   ✅ Describe specific circumstances that the job performer is in when they need to get the job done.
+-   ✅ Focus on one specific goal or aspect that the job performer needs to complete when writing out the job statement so that it makes it easier to validate in the future.
+-   ✅ Focus the outcome of the job statement around the desired end state or feeling for the job performer as well as the reason why completing the job is so important. Ensure the outcome is something that is measurable and can be used to validate the job statement.

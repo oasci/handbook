@@ -68,8 +68,8 @@ refresh-locks: conda-create conda-setup conda-dependencies conda-lock pre-commit
 
 .PHONY: validate
 validate:
-	$(CONDA) pre-commit run --all-files
 	$(CONDA) markdownlint-cli2-fix handbook/*
+	$(CONDA) pre-commit run --all-files
 
 .PHONY: serve
 serve:
