@@ -2,7 +2,7 @@
 
 !!! info
 
-    Here is a template that OASCI uses to plan and guide code-based projects.
+    Here is a template that OASCI uses to plan and guide software-based projects.
     Thoughtful completion of this proposal is also the first step to proposing a successful project collaboration with OASCI.
     Remove this admonition and all annotations when drafting the proposal.
 

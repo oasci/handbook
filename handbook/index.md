@@ -9,7 +9,6 @@ Academic education and research are often driven by funding pursuits and a desir
 OASCI uses a forward-thinking, inclusive, and progressive approach that welcomes all those passionate about exploring, learning, and sharing knowledge.
 Our non-profit's core mission is to provide cutting-edge, open, accessible educational and research resources and opportunities.
 
-
 ## Deploying
 
 We use [bump-my-version](https://github.com/callowayproject/bump-my-version) to release a new version.
@@ -32,7 +31,7 @@ git push --follow-tags
 
 Some of this content is adapted with permission from the following sources:
 
-- [GitLab's Handbook](https://handbook.gitlab.com/).
+-   [GitLab's Handbook](https://handbook.gitlab.com/).
 
 ## License
 

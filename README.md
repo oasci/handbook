@@ -31,7 +31,7 @@ git push --follow-tags
 
 Some of this content is adapted with permission from the following sources:
 
-- [GitLab's Handbook](https://handbook.gitlab.com/).
+-   [GitLab's Handbook](https://handbook.gitlab.com/).
 
 ## License
 

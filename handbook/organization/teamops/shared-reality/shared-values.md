@@ -19,7 +19,6 @@ Shared values also create guardrails that provide freedom for individual decisio
 
     **Resource** [Virtual and hybrid teams with shared values perform better](https://www.iese.edu/insight/articles/hybrid-teams-values-perform-better/) (research report)
 
-
 ??? example "Change management support for shared values"
 
     **Quick Start Tips:**

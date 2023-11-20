@@ -46,14 +46,14 @@ At times, someone may be a DRI for an entire process or project.
 Because this comes with additional responsibility, there are some suggested characteristics to keep in mind when assigning the DRI.
 [Mike Brown](https://www.brainzooming.com/team#MikeBrownBio) in his November 2015 article, [Project Management – 8 Characteristics of a DRI](http://brainzooming.com/project-management-8-chracteristics-of-a-dri/25340/), lists the following:
 
-1. Detail-orientated without ever losing a strong strategic perspective.
-2. Calm under the pressure of implementation and deadlines.
-3. A strong listener with great skill at asking questions.
-4. Able to vary the direction of project (or tactic or task) in smart ways to keep moving toward the objective.
-5. Adept at anticipating potential problems and addressing them early.
-6. Able to successfully interact at senior and junior levels within the organization.
-7. Resilient in order to recover from setbacks.
-8. Consistent in how they respond to comparable situations.
+1.  Detail-orientated without ever losing a strong strategic perspective.
+2.  Calm under the pressure of implementation and deadlines.
+3.  A strong listener with great skill at asking questions.
+4.  Able to vary the direction of project (or tactic or task) in smart ways to keep moving toward the objective.
+5.  Adept at anticipating potential problems and addressing them early.
+6.  Able to successfully interact at senior and junior levels within the organization.
+7.  Resilient in order to recover from setbacks.
+8.  Consistent in how they respond to comparable situations.
 
 The DRI is also part of a team, a team needs to be motivated and aligned on achieving the steps to get to success.
 The DRI will also be responsible for making sure the team gets there.
@@ -88,16 +88,16 @@ These are extremely rare.
 It is the responsibility of the DRI to recognize the need for this and to continue to move the project forward.
 Most of these circumstances will happen in instances in which initiatives:
 
-- Involve 3-or-more functions
-- Could have a large financial impact
-- Could present significant risk to the business
-- Have business reputation considerations
-- Have multiple success considerations (for instance, increase iACV through a product change AND maintain customer NPS)
+-   Involve 3-or-more functions
+-   Could have a large financial impact
+-   Could present significant risk to the business
+-   Have business reputation considerations
+-   Have multiple success considerations (for instance, increase iACV through a product change AND maintain customer NPS)
 
 Examples include:
 
-- A large cross-functional initiative that has significant reputational or financial implications for the GitLab and its users, such as a pricing initiative
-- The rollout of a major policy change that requires multiple functions to align on a coordinated response (for example, legal, marketing, finance), such as changes to the Terms of Service
+-   A large cross-functional initiative that has significant reputational or financial implications for the GitLab and its users, such as a pricing initiative
+-   The rollout of a major policy change that requires multiple functions to align on a coordinated response (for example, legal, marketing, finance), such as changes to the Terms of Service
 
 In these instances, another person may own the final decision, but this doesn't mean that key process steps should be skipped and other key stakeholders shouldn't be involved in ensuring a successful outcome.
 If a DRI is not considering key stakeholder feedback, executing without adequately planning for success, and saying, "the E-Group approved this," it is worth pausing and considering whether key steps are being missed or additional items should be considered.
@@ -107,7 +107,7 @@ If this can't be done within a reasonable period of time, the DRI should disagre
 
 ## Further reading
 
-1. [How well does Apple's DRI model work in practice](https://www.forbes.com/sites/quora/2012/10/02/how-well-does-apples-directly-responsible-individual-dri-model-work-in-practice/#4d83402d194c)
-2. [Matthew Mamet, DRI](https://medium.com/@mmamet/directly-responsible-individuals-f5009f465da4)
-3. [Communicating effectively and responsibly through text](/handbook/company/culture/all-remote/effective-communication/)
-4. [GitLab Handbook, Guidance on Feedback]({{< ref "guidance-on-feedback" >}})
+1.  [How well does Apple's DRI model work in practice](https://www.forbes.com/sites/quora/2012/10/02/how-well-does-apples-directly-responsible-individual-dri-model-work-in-practice/#4d83402d194c)
+2.  [Matthew Mamet, DRI](https://medium.com/@mmamet/directly-responsible-individuals-f5009f465da4)
+3.  [Communicating effectively and responsibly through text](/handbook/company/culture/all-remote/effective-communication/)
+4.  [GitLab Handbook, Guidance on Feedback]({{< ref "guidance-on-feedback" >}})

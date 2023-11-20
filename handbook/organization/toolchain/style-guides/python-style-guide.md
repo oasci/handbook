@@ -1,8 +1,5 @@
 # Python style guide
 
-
-# Google Python Style Guide
-
 ## 1 Background
 
 Python is the main dynamic language used at Google. This style guide is a list
@@ -13,13 +10,11 @@ To help you format code correctly, we've created a [settings file for Vim](googl
 Many teams use the [Black](https://github.com/psf/black) or [Pyink](https://github.com/google/pyink)
 auto-formatter to avoid arguing over formatting.
 
-
 ## 2 Python Language Rules
 
 ### 2.1 Lint
 
 Run `pylint` over your code using this [pylintrc](https://google.github.io/styleguide/pylintrc).
-
 
 #### 2.1.1 Definition
 
@@ -30,11 +25,9 @@ C and C++. Because of the dynamic nature of Python, some
 warnings may be incorrect; however, spurious warnings should be fairly
 infrequent.
 
-
 #### 2.1.2 Pros
 
 Catches easy-to-miss errors like typos, using-vars-before-assignment, etc.
-
 
 #### 2.1.3 Cons
 
@@ -124,13 +117,13 @@ Module names can still collide. Some module names are inconveniently long.
 -   Use `from x import y as z` in any of the following circumstances:
 -   Two modules named `y` are to be imported
     Test
-    -  `y` conflicts with a top-level name defined in the current module.
+    -   `y` conflicts with a top-level name defined in the current module.
         -   `y` conflicts with a common parameter name that is part of the public
         API (e.g., `features`).
     -   `y` is an inconveniently long name.
     -   `y` is too generic in the context of your code (e.g., `from
         storage.file_system import options as fs_options`).
-*   Use `import y as z` only when `z` is a standard abbreviation (e.g., `import
+-   Use `import y as z` only when `z` is a standard abbreviation (e.g., `import
     numpy as np`).
 
 For example the module `sound.effects.echo` may be imported as follows:
@@ -150,12 +143,12 @@ package twice.
 
 Exemptions from this rule:
 
-*   Symbols from the following modules are used to support static analysis and
+-   Symbols from the following modules are used to support static analysis and
     type checking:
-    *   [`typing` module](#typing-imports)
-    *   [`collections.abc` module](#typing-imports)
-    *   [`typing_extensions` module](https://github.com/python/typing_extensions/blob/main/README.md)
-*   Redirects from the
+    -   [`typing` module](#typing-imports)
+    -   [`collections.abc` module](#typing-imports)
+    -   [`typing_extensions` module](https://github.com/python/typing_extensions/blob/main/README.md)
+-   Redirects from the
     [six.moves module](https://six.readthedocs.io/#module-six.moves).
 
 <a id="s2.3-packages"></a>
@@ -227,7 +220,6 @@ The directory the main binary is located in should not be assumed to be in
 code should assume that `import jodie` refers to a third-party or top-level
 package named `jodie`, not a local `jodie.py`.
 
-
 <a id="s2.4-exceptions"></a>
 <a id="24-exceptions"></a>
 
@@ -282,7 +274,6 @@ Exceptions must follow certain conditions:
     If an exception is desired in the latter cases, use a raise statement. For
     example:
 
-
     ```python
     Yes:
       def connect_to_next_port(self, minimum: int) -> int:
@@ -327,7 +318,6 @@ Exceptions must follow certain conditions:
         assert port is not None
         return port
     ```
-
 
 -   Libraries or packages may define their own exceptions. When doing so they
     must inherit from an existing exception class. Exception names should end in
@@ -388,13 +378,13 @@ Occasionally useful.
 <a id="global-variables-cons"></a>
 #### 2.5.3 Cons
 
-*   Breaks encapsulation: Such design can make it hard to achieve valid
+-   Breaks encapsulation: Such design can make it hard to achieve valid
     objectives. For example, if global state is used to manage a database
     connection, then connecting to two different databases at the same time
     (such as for computing differences during a migration) becomes difficult.
     Similar problems easily arise with global registries.
 
-*   Has the potential to change module behavior during the import, because
+-   Has the potential to change module behavior during the import, because
     assignments to global variables are done when the module is first imported.
 
 <a id="s2.5.4-decision"></a>
@@ -897,11 +887,11 @@ attribute access.
 <a id="properties-pros"></a>
 #### 2.13.2 Pros
 
-*   Allows for an attribute access and assignment API rather than
+-   Allows for an attribute access and assignment API rather than
     [getter and setter](#getters-and-setters) method calls.
-*   Can be used to make an attribute read-only.
-*   Allows calculations to be lazy.
-*   Provides a way to maintain the public interface of a class when the
+-   Can be used to make an attribute read-only.
+-   Allows calculations to be lazy.
+-   Provides a way to maintain the public interface of a class when the
     internals evolve independently of class users.
 
 <a id="s2.13.3-cons"></a>
@@ -910,8 +900,8 @@ attribute access.
 <a id="properties-cons"></a>
 #### 2.13.3 Cons
 
-*   Can hide side-effects much like operator overloading.
-*   Can be confusing for subclasses.
+-   Can hide side-effects much like operator overloading.
+-   Can be confusing for subclasses.
 
 <a id="s2.13.4-decision"></a>
 <a id="2134-decision"></a>
@@ -1345,7 +1335,6 @@ Type annotations can be in the source or in a
 possible, annotations should be in the source. Use pyi files for third-party or
 extension modules.
 
-
 <a id="s2.21.1-definition"></a>
 <a id="2211-definition"></a>
 
@@ -1739,7 +1728,6 @@ Typical usage example:
   bar = foo.FunctionBar()
 """
 ```
-
 
 <a id="s3.8.2.1-test-modules"></a>
 
@@ -2362,7 +2350,6 @@ out how to get more details.
 
 Old style, formerly recommended, but discouraged for use in new code:
 
-
 ```python
 # TODO(crbug.com/192795): Investigate cpufreq optimizations.
 # TODO(yourusername): Use a "\*" here for concatenation operator.
@@ -2401,7 +2388,6 @@ Yes: from collections.abc import Mapping, Sequence
 No:  import os, sys
 ```
 
-
 Imports are always put at the top of the file, just after any module comments
 and docstrings and before module globals and constants. Imports should be
 grouped from most generic to least generic:
@@ -2423,14 +2409,12 @@ grouped from most generic to least generic:
 3.  [third-party](https://pypi.org/) module
     or package imports. For example:
 
-
     ```python
     import tensorflow as tf
     ```
 
 4.  Code repository
     sub-package imports. For example:
-
 
     ```python
     from otherproject.ai import mind
@@ -2440,7 +2424,6 @@ grouped from most generic to least generic:
     top-level
     sub-package as this file. For example:
 
-
     ```python
     from myproject.backend.hgwells import time_machine
     ```
@@ -2449,7 +2432,6 @@ grouped from most generic to least generic:
     required. **New code is encouraged not to bother with this.** Simply treat
     application-specific sub-package imports the same as other sub-package
     imports.
-
 
 Within each grouping, imports should be sorted lexicographically, ignoring case,
 according to each module's full package path (the `path` in `from path import
@@ -2478,7 +2460,6 @@ from otherproject.ai import soul
 #from myproject.backend.hgwells import time_machine
 #from myproject.backend.state_machine import main_loop
 ```
-
 
 <a id="s3.14-statements"></a>
 <a id="314-statements"></a>
@@ -2555,7 +2536,6 @@ change in complexity.
 `function_name`, `GLOBAL_CONSTANT_NAME`, `global_var_name`, `instance_var_name`,
 `function_parameter_name`, `local_var_name`, `query_proper_noun_for_thing`,
 `send_acronym_via_https`.
-
 
 Function names, variable names, and filenames should be descriptive; avoid
 abbreviation. In particular, do not use abbreviations that are ambiguous or
@@ -2721,7 +2701,6 @@ containing `exec "$0.py" "$@"`.
 
 </table>
 
-
 <a id="s3.17-main"></a>
 <a id="317-main"></a>
 
@@ -2810,9 +2789,9 @@ the function into smaller and more manageable pieces.
 <a id="typing-general"></a>
 #### 3.19.1 General Rules
 
-*   Familiarize yourself with [PEP-484](https://peps.python.org/pep-0484/).
+-   Familiarize yourself with [PEP-484](https://peps.python.org/pep-0484/).
 
-*   In methods, only annotate `self`, or `cls` if it is necessary for proper
+-   In methods, only annotate `self`, or `cls` if it is necessary for proper
     type information. e.g.,
 
     ```python
@@ -2821,12 +2800,12 @@ the function into smaller and more manageable pieces.
       return cls()
     ```
 
-*   Similarly, don't feel compelled to annotate the return value of `__init__`
+-   Similarly, don't feel compelled to annotate the return value of `__init__`
     (where `None` is the only valid option).
 
-*   If any other variable or a returned type should not be expressed, use `Any`.
+-   If any other variable or a returned type should not be expressed, use `Any`.
 
-*   You are not required to annotate all the functions in a module.
+-   You are not required to annotate all the functions in a module.
 
     -   At least annotate your public APIs.
     -   Use judgment to get to a good balance between safety and clarity on the
@@ -3160,8 +3139,8 @@ def check_length(x: AnyStr) -> AnyStr:
 A type variable must have a descriptive name, unless it meets all of the
 following criteria:
 
-*   not externally visible
-*   not constrained
+-   not externally visible
+-   not constrained
 
 ```python
 Yes:
@@ -3335,7 +3314,6 @@ _T = TypeVar('_T')
 def get_names(employee_ids: Sequence[_T]) -> Mapping[_T, str]:
   """Returns a mapping from employee ID to employee name for given IDs."""
 ```
-
 
 <a id="4-parting-words"></a>
 

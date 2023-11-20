@@ -22,12 +22,11 @@ TeamOps frees contributors from the conventional bounds of time zones and meetin
 
     **Resource:** [Reimagining the virtual workplace around inclusion and engagement](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/the-organization-blog/reimagining-the-virtual-workplace-around-inclusion-and-engagement) (article)
 
-
 {{% details summary="Change management support for inclusivity" %}}
 **Quick Start Tips:**
-- *Individual:* Commit to spending 1 hour per week to building professional relationships with your team members. Prioritize team members that work in independent roles, have quiet personalities, or you suspect are at risk for feeling underappreciated.
-- *Team:* Connect with your company’s diversity and inclusion director to ask for ideas on how to support your company’s current goals. To help measure your status, specifically request scores, resources, events, or trainings that might be available.
-- *Company:* Confirm that all engagement and employee satisfaction surveys are measuring feelings of connection, belonging, and trust.
+-   *Individual:* Commit to spending 1 hour per week to building professional relationships with your team members. Prioritize team members that work in independent roles, have quiet personalities, or you suspect are at risk for feeling underappreciated.
+-   *Team:* Connect with your company’s diversity and inclusion director to ask for ideas on how to support your company’s current goals. To help measure your status, specifically request scores, resources, events, or trainings that might be available.
+-   *Company:* Confirm that all engagement and employee satisfaction surveys are measuring feelings of connection, belonging, and trust.
 
 **Recommended TeamOps Partner:** [Flourish](https://www.flouriship.com/) (consultant)
 {{% /details %}}

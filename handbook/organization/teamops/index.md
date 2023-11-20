@@ -46,27 +46,27 @@ TeamOps is comprised of four principles, each with six tenets that outline group
 There are five foundational elements that should already be in place in an organization in order to support the adoption of TeamOps.
 These prerequisites relate to the company processes, digital infrastructure, and culture that create an *ideal* environment to implement TeamOps tenets.
 
-1. **Digital Infrastructure.**
+1.  **Digital Infrastructure.**
     Before we can teach you how to work in a virtual-first way, we need to make sure that your team has the correct tech stack to enable digital collaboration.
     Every infrastructure is different, but at a minimum, all should include one tool from the following categories:
-      - Group communication (eg: Slack)
-      - File storage (eg: Google Drive)
-      - Knowledge management (eg: GitLab, Almanac)
-      - Project management (eg: GitLab, Asana)
-      - HR management (eg: Workday)
-      - Financial management (eg: Quickbooks)
-      - Calendars and scheduling (eg: Google Calendar)
-2. **Company Handbook.**
+      -   Group communication (eg: Slack)
+      -   File storage (eg: Google Drive)
+      -   Knowledge management (eg: GitLab, Almanac)
+      -   Project management (eg: GitLab, Asana)
+      -   HR management (eg: Workday)
+      -   Financial management (eg: Quickbooks)
+      -   Calendars and scheduling (eg: Google Calendar)
+2.  **Company Handbook.**
     TeamOps relies heavily on knowledge sharing through documentation and asynchronous communication.
     If you don't already have some kind of knowledge management system to host this information sharing-such as a wiki or handbook- you'll want to create one before starting the courses and certifications.
     But don't worry, you only have to get it started, because the TeamOps Practitioner Certification will guide you through the process of using this resource as a [Single Source of Truth](./shared-reality/ssot.md) and populating the content for your team to use.
-3. **Shared set of values.**
+3.  **Shared set of values.**
     Your [core values](/handbook/values/) must be more than words on a page.
     They should be actionable, [reinforced](/handbook/company/culture/all-remote/building-culture/#reinforcing-your-values) in everything you do as a team, and act as a [filter for hiring](/handbook/company/culture/all-remote/building-culture/#how-do-i-assess-culture-fit-remotely) to ensuring you continue to grow the team with people who are committed to living out these values in their work.
-4. **Team trust and inclusion.**
+4.  **Team trust and inclusion.**
     Implementing new management and operating techniques can be uncomfortable at first.
     A baseline of [trust](/handbook/leadership/building-trust/) and [inclusivity](/handbook/company/culture/inclusion/) across the organization will better enable the team to embrace change and assume positive intent along the way.
-5. **Focus on results.**
+5.  **Focus on results.**
     [Measuring output](/handbook/company/culture/all-remote/management/#focusing-on-results) instead of input is foundational to managing a virtual-first team.
     This means establishing clear, transparent goals so that team members at all levels of the organization can see and take ownership for how their work is contributing to the team, department, and company's success.
 
@@ -74,11 +74,11 @@ These prerequisites relate to the company processes, digital infrastructure, and
 
 While exploring and adopting TeamOps as an operational model, it's important to remember a few things:
 
-1. **TeamOps describes an ideal state**.
+1.  **TeamOps describes an ideal state**.
     In management, it is not possible to remain in an ideal state in perpetuity.
     Competing priorities, conflict tradeoffs, and coordination headwinds will be present at varying times.
     When applying TeamOps, resist the urge to take a binary approach.
     Rather than asking, "Have we completely achieved TeamOps in our team or company?," leverage TeamOps principles to *navigate* with more information and greater velocity.
-2. **TeamOps is for individual contributors *and* people managers.**
+2.  **TeamOps is for individual contributors *and* people managers.**
     TeamOps empowers individual contributors to be better stewards of their own time and attention.
     Concurrently, it empowers people managers to lead with deeper conviction while creating more space for their direct reports to grow, develop, and contribute.
