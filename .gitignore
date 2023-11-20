@@ -13,3 +13,8 @@ site/
 public/
 
 .cache
+
+# nodejs
+node_modules
+package-lock.json
+package.json
