@@ -13,6 +13,7 @@ site/
 public/
 
 .cache
+environment.yml
 
 # nodejs
 node_modules

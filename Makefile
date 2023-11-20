@@ -2,11 +2,10 @@ SHELL := /usr/bin/env bash
 PYTHON_VERSION := 3.11
 PYTHON_VERSION_CONDENSED := 311
 PACKAGE_NAME := oasci-handbook
-REPO_PATH := $(shell git rev-parse --show-toplevel)
-PACKAGE_PATH := $(REPO_PATH)/$(PACKAGE_NAME)
-TESTS_PATH := $(REPO_PATH)/tests
+PACKAGE_PATH := $(PACKAGE_NAME)/
 CONDA_NAME := $(PACKAGE_NAME)-dev
 CONDA := conda run -n $(CONDA_NAME)
+CONDA_LOCK_OPTIONS := -p linux-64 -p osx-64 -p win-64 --channel conda-forge
 
 ###   ENVIRONMENT   ###
 
@@ -29,20 +28,21 @@ conda-setup:
 # Conda-only packages specific to this project.
 .PHONY: conda-dependencies
 conda-dependencies:
-	echo "No conda-only packages are required."
+	$(CONDA) conda install -y -c conda-forge nodejs
+	$(CONDA) npm install markdownlint-cli2 --global
 
 .PHONY: conda-lock
 conda-lock:
-	- rm $(REPO_PATH)/conda-lock.yml
+	- rm conda-lock.yml
 	$(CONDA) conda env export --from-history | grep -v "^prefix" > environment.yml
-	$(CONDA) conda-lock -f environment.yml -p linux-64 -p osx-64 -p win-64
-	rm $(REPO_PATH)/environment.yml
-	$(CONDA) cpl-deps $(REPO_PATH)/pyproject.toml --env_name $(CONDA_NAME)
+	$(CONDA) conda-lock -f environment.yml $(CONDA_LOCK_OPTIONS)
+	rm environment.yml
+	$(CONDA) cpl-deps pyproject.toml --env_name $(CONDA_NAME)
 	$(CONDA) cpl-clean --env_name $(CONDA_NAME)
 
 .PHONY: from-conda-lock
 from-conda-lock:
-	$(CONDA) conda-lock install -n $(CONDA_NAME) $(REPO_PATH)/conda-lock.yml
+	$(CONDA) conda-lock install -n $(CONDA_NAME) conda-lock.yml
 	$(CONDA) cpl-clean --env_name $(CONDA_NAME)
 
 .PHONY: pre-commit-install
@@ -62,13 +62,14 @@ install:
 environment: conda-create from-conda-lock pre-commit-install install
 
 .PHONY: refresh-locks
-refresh-locks: conda-create conda-setup conda-lock pre-commit-install poetry-lock install
+refresh-locks: conda-create conda-setup conda-dependencies conda-lock pre-commit-install poetry-lock install
 
 
 
 .PHONY: validate
 validate:
 	$(CONDA) pre-commit run --all-files
+	$(CONDA) markdownlint-cli2-fix handbook/*
 
 .PHONY: serve
 serve:
