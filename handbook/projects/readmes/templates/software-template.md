@@ -26,6 +26,8 @@
 
 2.  The name of an OASCI [Fellow](/organization/scope/4-fellow) or [Director](/organization/scope/5-director) that is well-suited and agreed to be the Directly Responsible Individual (DRI) for the project.
 
+TODO: Project abstract
+
 ## Problem statement
 
 Begin this section by offering a comprehensive overview of the central issue your project aims to tackle within the community.
@@ -96,28 +98,6 @@ This focus enhances the likelihood of successful implementation and increases th
 Consider including visual representations, such as diagrams or charts, to illustrate the scope of your project.
 Visual aids can help stakeholders quickly grasp the various components and boundaries of the project, enhancing overall comprehension.
 
-## Milestones
-
-Break down your project into manageable milestones, each representing a distinct phase of your project's development.
-Ensure that these milestones are logically structured and build upon one another to facilitate a phased and systematic approach.
-Clearly define the start and end points of each milestone, establishing a roadmap that guides the project's progression.
-
-For each milestone, provide a specific set of tasks and activities that need to be completed.
-Offer a detailed breakdown of the work involved, outlining the individual steps necessary to achieve the goals of each milestone.
-This level of granularity not only helps in project planning but also allows stakeholders to understand the intricacies of the project's development.
-
-Provide links to corresponding epics or issues in your project management system for each milestone.
-This ensures a seamless integration of your project plan with your project management tools.
-Stakeholders can easily access detailed information about each milestone, view task dependencies, and track progress within the project management system, enhancing transparency and accountability.
-
-Emphasize the importance of creating a clear roadmap for the project through the milestone structure.
-This roadmap should provide stakeholders with a visual representation of the project's progression, showcasing key milestones, their interdependencies, and the overall timeline.
-A well-defined roadmap enhances communication and understanding of the project's trajectory.
-
-Offer stakeholders insights into the phased approach of your project.
-Explain how each milestone represents a critical phase of development and how the completion of these milestones contributes to the overall success of the project.
-This understanding helps stakeholders appreciate the strategic planning behind the project and builds confidence in its execution.
-
 ## Approach
 
 Initiate this section by offering a brief yet insightful overview of the methodology you plan to employ in your project.
@@ -141,6 +121,51 @@ Discuss how your methodology accommodates unforeseen challenges, ensuring that t
 
 Clearly articulate how your approach aligns with the overarching goals of the project.
 Link the chosen methodology and tools back to the vision statement, showcasing how each element of your approach is strategically aligned to contribute to the project's success and the resolution of the identified problem.
+
+## Jobs to be Done
+
+Initiate this section by developing a comprehensive table that encompasses job statements for the project area.
+Organize the table with columns for job statements, maturity ratings, links to confidential research issues, and links to public roadmap issues or epics.
+This structured format ensures clarity and accessibility for stakeholders seeking insights into the project's focus areas and progress.
+
+For each job statement, clearly articulate the specific tasks or responsibilities that need to be addressed within the project.
+These statements should succinctly capture the core functions or objectives related to the project area, serving as a reference point for stakeholders to understand the project's scope and priorities.
+
+Assign maturity ratings to each job statement, indicating the level of development or completion for the corresponding task.
+Maturity ratings can be defined on a scale (e.g., low, medium, high) or using specific milestones (e.g., planning, in-progress, completed).
+This provides stakeholders with a quick overview of the current status of each job statement.
+
+Include links to confidential research issues for each job statement, providing stakeholders with access to detailed research or documentation related to the specific tasks.
+This confidential information may include sensitive data, detailed analyses, or proprietary insights that contribute to the project's decision-making process.
+
+For transparency and stakeholder engagement, provide links to public roadmap issues or epics associated with each job statement.
+These public-facing documents should outline the strategic roadmap for the project, detailing upcoming milestones, planned features, and anticipated releases.
+Public links enable stakeholders to track the project's progress and understand the broader context of each job statement.
+
+The table, as a whole, should offer a structured view of the project's focus areas and their corresponding progress points.
+Stakeholders can refer to this table to gain insights into the current state of each job statement, understand the trajectory of the project, and assess its alignment with overarching goals.
+
+## Milestones
+
+Break down your project into manageable milestones, each representing a distinct phase of your project's development.
+Ensure that these milestones are logically structured and build upon one another to facilitate a phased and systematic approach.
+Clearly define the start and end points of each milestone, establishing a roadmap that guides the project's progression.
+
+For each milestone, provide a specific set of tasks and activities that need to be completed.
+Offer a detailed breakdown of the work involved, outlining the individual steps necessary to achieve the goals of each milestone.
+This level of granularity not only helps in project planning but also allows stakeholders to understand the intricacies of the project's development.
+
+Provide links to corresponding epics or issues in your project management system for each milestone.
+This ensures a seamless integration of your project plan with your project management tools.
+Stakeholders can easily access detailed information about each milestone, view task dependencies, and track progress within the project management system, enhancing transparency and accountability.
+
+Emphasize the importance of creating a clear roadmap for the project through the milestone structure.
+This roadmap should provide stakeholders with a visual representation of the project's progression, showcasing key milestones, their interdependencies, and the overall timeline.
+A well-defined roadmap enhances communication and understanding of the project's trajectory.
+
+Offer stakeholders insights into the phased approach of your project.
+Explain how each milestone represents a critical phase of development and how the completion of these milestones contributes to the overall success of the project.
+This understanding helps stakeholders appreciate the strategic planning behind the project and builds confidence in its execution.
 
 ## Timeline
 
@@ -167,28 +192,37 @@ Emphasize the importance of regular updates and communication regarding the proj
 Establish a communication plan to keep stakeholders informed about any adjustments, delays, or accelerations in the project schedule.
 Transparent communication fosters trust and enables stakeholders to stay actively engaged in the project's progress.
 
-## Jobs to be Done
+## Success
 
-Initiate this section by developing a comprehensive table that encompasses job statements for the project area.
-Organize the table with columns for job statements, maturity ratings, links to confidential research issues, and links to public roadmap issues or epics.
-This structured format ensures clarity and accessibility for stakeholders seeking insights into the project's focus areas and progress.
+Initiate this section by clearly defining what success means for your project.
+Articulate the overarching goals and outcomes that, when achieved, would signify the project's success.
+This provides stakeholders with a comprehensive understanding of the project's intended impact.
 
-For each job statement, clearly articulate the specific tasks or responsibilities that need to be addressed within the project.
-These statements should succinctly capture the core functions or objectives related to the project area, serving as a reference point for stakeholders to understand the project's scope and priorities.
+Specify the quantifiable metrics that will be used to measure success.
+These metrics should be concrete, measurable, and directly aligned with the project's objectives.
+For example, if your project aims to improve community engagement, metrics could include the number of participants in events or the percentage increase in community satisfaction surveys.
 
-Assign maturity ratings to each job statement, indicating the level of development or completion for the corresponding task.
-Maturity ratings can be defined on a scale (e.g., low, medium, high) or using specific milestones (e.g., planning, in-progress, completed).
-This provides stakeholders with a quick overview of the current status of each job statement.
+Identify key performance indicators (KPIs) that align with the success metrics.
+KPIs offer a more granular view of project performance and provide actionable insights.
+Ensure that each KPI is clearly linked to a specific aspect of the project's success and can be tracked over time.
 
-Include links to confidential research issues for each job statement, providing stakeholders with access to detailed research or documentation related to the specific tasks.
-This confidential information may include sensitive data, detailed analyses, or proprietary insights that contribute to the project's decision-making process.
+Clearly explain the criteria for measuring success.
+Define the thresholds or benchmarks that indicate whether the project has met its objectives.
+For example, if one of your success metrics is increased revenue, specify the percentage increase required to consider the project financially successful.
 
-For transparency and stakeholder engagement, provide links to public roadmap issues or epics associated with each job statement.
-These public-facing documents should outline the strategic roadmap for the project, detailing upcoming milestones, planned features, and anticipated releases.
-Public links enable stakeholders to track the project's progress and understand the broader context of each job statement.
+Outline the monitoring and evaluation plan that will be implemented to track success metrics throughout the project lifecycle.
+Describe the frequency of evaluations, the tools or methods used for data collection, and the responsible parties for analysis.
+This plan ensures systematic tracking and provides timely insights into project performance.
 
-The table, as a whole, should offer a structured view of the project's focus areas and their corresponding progress points.
-Stakeholders can refer to this table to gain insights into the current state of each job statement, understand the trajectory of the project, and assess its alignment with overarching goals.
+Establish a baseline for each success metric to provide a starting point for measurement.
+Set realistic and achievable targets that represent the desired level of success.
+The comparison between the baseline and targets will help assess the project's progress and impact.
+
+Communicate the progress of success metrics regularly through project updates and reporting mechanisms.
+This ensures that stakeholders are continuously informed about the project's performance against established metrics and can provide feedback or adjustments as needed.
+
+Highlight that success metrics are not static and can be subject to refinement based on ongoing project insights.
+Emphasize the importance of an iterative approach, allowing for adjustments to success metrics based on evolving project goals, stakeholder feedback, or changing external factors.
 
 ## Reporting
 
@@ -222,38 +256,6 @@ Clearly articulate who will be responsible for initiating emergency communicatio
 Establish feedback loops within the reporting process.
 Encourage stakeholders to provide feedback on the content and format of the reports.
 Regularly assess the effectiveness of your reporting strategy and make adjustments based on stakeholder input to enhance overall communication.
-
-## Success
-
-Initiate this section by clearly defining what success means for your project.
-Articulate the overarching goals and outcomes that, when achieved, would signify the project's success.
-This provides stakeholders with a comprehensive understanding of the project's intended impact.
-
-Specify the quantifiable metrics that will be used to measure success.
-These metrics should be concrete, measurable, and directly aligned with the project's objectives.
-For example, if your project aims to improve community engagement, metrics could include the number of participants in events or the percentage increase in community satisfaction surveys.
-
-Identify key performance indicators (KPIs) that align with the success metrics.
-KPIs offer a more granular view of project performance and provide actionable insights.
-Ensure that each KPI is clearly linked to a specific aspect of the project's success and can be tracked over time.
-
-Clearly explain the criteria for measuring success.
-Define the thresholds or benchmarks that indicate whether the project has met its objectives.
-For example, if one of your success metrics is increased revenue, specify the percentage increase required to consider the project financially successful.
-
-Outline the monitoring and evaluation plan that will be implemented to track success metrics throughout the project lifecycle.
-Describe the frequency of evaluations, the tools or methods used for data collection, and the responsible parties for analysis.
-This plan ensures systematic tracking and provides timely insights into project performance.
-
-Establish a baseline for each success metric to provide a starting point for measurement.
-Set realistic and achievable targets that represent the desired level of success.
-The comparison between the baseline and targets will help assess the project's progress and impact.
-
-Communicate the progress of success metrics regularly through project updates and reporting mechanisms.
-This ensures that stakeholders are continuously informed about the project's performance against established metrics and can provide feedback or adjustments as needed.
-
-Highlight that success metrics are not static and can be subject to refinement based on ongoing project insights.
-Emphasize the importance of an iterative approach, allowing for adjustments to success metrics based on evolving project goals, stakeholder feedback, or changing external factors.
 
 ## References
 
