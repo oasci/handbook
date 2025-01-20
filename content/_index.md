@@ -6,13 +6,13 @@ toc: false
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
-  OASCI
+  Handbook
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx-mb-12">
 {{< hextra/hero-subtitle >}}
-  handbook
+  Learn how OASCI operates
 {{< /hextra/hero-subtitle >}}
 </div>
 
